@@ -1,0 +1,49 @@
+class CountryData {
+  final String countryName;
+  // final String fullCountryName;
+  // final String countryDescription;
+  // final String independence;
+  // final String area;
+  final String countryFlag;
+  // final String population;
+  final String capital;
+  // final String currency;
+  // // final String currentPresident;
+  // final String region;
+  // final String countryCode;
+
+  CountryData({
+    required this.countryName,
+    // required this.fullCountryName,
+    // required this.countryDescription,
+    // required this.independence,
+    // required this.area,
+    required this.countryFlag,
+    // required this.population,
+    required this.capital,
+    // required this.currency,
+    // // required this.currentPresident,
+    // required this.region,
+    // required this.countryCode,
+  });
+
+  factory CountryData.fromJson(Map<String, dynamic> json) {
+    return CountryData(
+      countryName: json['name']['common'] ?? 'Unknown',
+      // fullCountryName: json['full_name'] ?? 'Unknown',
+      countryFlag: json['flags']['png'] ?? 'Unknown',
+      // countryDescription: json['description'] ?? 'Unknown',
+
+      // //
+      // population: json['population'] ?? 'Unknown',
+      // region: json['continent'] ?? 'Unknown',
+      capital: json['capital'] ?? 'Unknown',
+
+      // independence: json['independence_date'] ?? 'Unknown',
+      // area: json['size'] ?? 'Unknown',
+      // currency: json['currency'] ?? 'Unknown',
+      // currentPresident: json['currentPresident'],
+    );
+    // countryCode: json['countryCode']);
+  }
+}
