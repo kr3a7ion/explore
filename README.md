@@ -30,7 +30,7 @@ This Flutter app provides a **seamless user experience** for selecting languages
 
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/kr3a7ion/explore.git
 cd your-repo
 ```
 
